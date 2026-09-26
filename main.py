@@ -47,5 +47,3 @@ raw_response = agent_executor.invoke(
     {"query": "What is the capital of France?" ,"name":"Keen"})
 
 print(raw_response)
-
-print (ResearchResponse)
