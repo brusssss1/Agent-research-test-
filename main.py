@@ -5,7 +5,7 @@ from langchain_anthropic import ChatAnthropic
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser
 from langchain_groq import ChatGroq
-from tools import search_tool, wiki_tool, save_tool
+from langchain_classic.agents import create_tool_calling_agent, AgentExecutor
 
 
 load_dotenv("Practice/.env")
@@ -48,3 +48,4 @@ raw_response = agent_executor.invoke(
 
 print(raw_response)
 
+print (ResearchResponse)
